@@ -1,0 +1,34 @@
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains mixins used by the less
+	files in this folder.
+*/
+
+.box_shadow( @shadow ) {
+	-webkit-box-shadow: @shadow;
+ 	 -khtml-box-shadow: @shadow;
+	   -moz-box-shadow: @shadow;
+	    -ms-box-shadow: @shadow;
+	     -o-box-shadow: @shadow;
+	        box-shadow: @shadow;
+}
+
+.radius( @radius ){
+	-webkit-border-radius: @radius;
+ 	 -khtml-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	    -ms-border-radius: @radius;
+	     -o-border-radius: @radius;
+	        border-radius: @radius;
+}
+
+.opacity( @opacity: 0.8 ) {
+	@ieopacity: @opacity * 100;
+	filter: ~"alpha(opacity = @{ieopacity} )";
+
+	-khtml-opacity: @opacity;
+	  -moz-opacity: @opacity;
+           opacity: @opacity;
+}

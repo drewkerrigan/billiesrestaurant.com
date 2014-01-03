@@ -1,0 +1,106 @@
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains the styles necessary for
+	the Menu Builder to function
+*/
+
+@import 'mixins';
+@import 'reveal.css';
+
+
+.mashupPage ul, #MashupManagerItems ul{
+	margin:0px;
+	min-height:100px;
+	.placeholder {
+		background:#f1f1f1;
+	}
+	li {
+		background:#fff;
+		padding:11px;
+		position: relative;
+		border:1px solid #eee;
+		.box_shadow( 0px 1px 2px 0px #ddd );
+		cursor: pointer;
+		&:hover {
+			.itemName {
+				background: @color-primary;
+				color:#fff;
+			}
+		}
+		.removeItem {
+			position:absolute;
+			top:-6px;
+			right:-6px;
+		}
+		.itemName {
+			font-family: georgia;
+			text-align:center;
+			background:#fafafa;
+			display:block;
+			padding:5px;
+			cursor:pointer;
+			margin:0 0 11px 0;
+		}
+		.items {
+			text-align:center;
+			font-size:11px;
+			display:block;
+			color:#888;
+		}
+	}
+
+}
+
+#MashupManagerItems ul.left {
+	width:48%;
+	float:left;
+}
+
+#MashupManagerItems ul.right {
+	width:48%;
+	float:right;
+}
+
+
+#MashupManagerItems .removeItem {
+	display:none;
+}
+
+.mashupPage {
+	zoom:1;
+	margin:22px 0 22px 0;
+	h1 {
+		font-size:16px;
+		border-bottom: 1px solid #ddd;
+		margin:0 0 11px 0;
+		padding:0 0 11px 0;
+	}
+	&:first-child {
+		margin:none;
+	}
+	.checkboxes {
+		font-size:11px;
+		color: #999
+	}
+	.addItem {
+		background:#f1f1f1;
+		text-align: center;
+		display:block;
+		cursor: pointer;
+		padding:5px 11px;
+		&:hover {
+			background: @color-primary;
+			color:#fff;
+		}
+	}
+	.menuLeft {
+		width:45%;
+		float:left;
+	}
+	.menuRight {
+		width:45%;
+		float:right;
+	}
+}

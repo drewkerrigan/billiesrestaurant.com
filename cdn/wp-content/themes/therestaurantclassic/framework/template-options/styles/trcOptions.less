@@ -1,0 +1,229 @@
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains all the style rules
+	necessary to generate the options in
+	the admin backend.
+*/
+
+
+@import 'mixins';
+#trcLoad {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color: rgba(255,255,255,0.8);
+	background-image: url( '../images/trcLoad.gif' );
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	top:0px;
+	left:0px;
+	z-index:9999;
+	display:none;
+}
+
+#trcPostOptions {
+	margin-top:22px;
+	background-image: url( '../images/bg.png' );
+	border:1px solid #c2c2c2;
+	.box_shadow( none );
+	.inside {
+		padding:0px;
+		margin:0px;
+	}
+	h3.hndle {
+		.box_shadow( 0 1px 0px 0px rgba(255,255,255,0.5) );
+		border-bottom:1px solid #c2c2c2;
+	}
+	&.closed h3.hndle {
+		padding-left:10px;
+	}
+	#trcLogo {
+		width:174px;
+		height:81px;
+		margin:0 auto -52px auto;
+		display:block;
+		position: relative;
+		background-image: url( '../images/logo.png' );
+		top:-43px;
+		z-index:1500;
+	}
+	#optionsContainer {
+		position:relative;
+		top:-29px;
+		margin-bottom:-29px;
+		#menuBackground {
+			background:rgba(0,0,0,0.1);
+			position:absolute;
+			height:100%;
+			width: 160px;
+		}
+	}
+	#trcMenu {
+		width:160px;
+		margin:0px;
+		position: relative;
+		height:100%;
+		z-index:2000;
+		float:left;
+		padding:22px 0;
+		text-align: right;
+		li {
+			font-family:georgia;
+			margin:0px;
+			font-size:14px;
+			color:#666;
+			padding:11px 11px;
+			text-shadow:0px 1px 0px #eee;
+			border-bottom:1px dashed #afa89f;
+			cursor: pointer;
+			&:first-child {
+				border-top:1px dashed #afa89f;
+			}
+			&:hover {
+				color:#555;
+				text-shadow:0px 1px 0px rgba(255,255,255,0.3);
+				background:rgba(0,0,0,0.1);
+			}
+			&.active {
+				color:#444;
+				background:#fafafa;
+				border-bottom:1px solid #ccc;
+				&:first-child {
+					border-top:1px solid #ccc;
+				}
+			}
+		}
+	}
+
+	.help {
+		float:right;
+		font-size:11px;
+		cursor: help;
+		.title {
+			color: @color-primary;
+		}
+		.content {
+			display:none;
+		}
+		&:hover {
+			.content {
+				display: block;
+				position: absolute;
+				width:60%;
+				left:40%;
+				background:#fff;
+				padding:22px;
+				border:#eee 1px solid;
+			}
+		}
+	}
+
+	.helpSection {
+		ol {
+			margin:0 0 0 16px;
+			li {
+				border-top: 1px solid #ddd;
+				border-bottom:1px solid #fff;
+				padding:11px 0;
+				margin:0px;
+				&:first-child {
+					border:0px;
+					padding-top:0px;
+				}
+				&:last-child {
+					border-bottom:0px;
+				}
+			}
+		}
+		a {
+			color: @color-primary;
+		}
+	}
+	.inputTable {
+		label {
+			display:inline-block;
+			min-width:100px;
+		}
+	}
+	.button {
+		background: @color-primary;
+		.gradient( @color-primary + #111, @color-primary - #111 );
+		border:1px solid @color-primary - #222;
+		color:#fff;
+		text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px;
+	}
+
+	#trcSaveTop {
+		position:absolute;
+		top:22px;
+		right:40px;
+	}
+
+	#trcOptions {
+		display:block;
+		margin-left:160px;
+		background:#fafafa;
+		padding:44px;
+		position:relative;
+		z-index: 1000;
+		color:#666;
+		.m22{
+			margin-top:22px;
+		}
+		.m44 {
+			margin-top:44px;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			font-family: georgia;
+			font-weight: 500;
+		}
+		.half-right {
+			float:right;
+			width:48%;
+		}
+		.half-left {
+			float:left;
+			width:48%;
+		}
+		.checkAll, .checkNone {
+			cursor: pointer;
+			color:@color-primary;
+			display:inline-block;
+			margin-right:11px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		section {
+			display:none;
+			&.active {
+				display:block;
+			}
+			.option {
+				margin:44px 0 0 0;
+				&:first-child {
+					margin:none;
+				}
+			}
+		}
+	}
+	label.sectionTitle {
+		font-family:georgia;
+		display:block;
+		color:#444;
+		font-size:16px;
+		font-style: italic;
+		border-bottom:1px dashed #eee;
+		padding:0 0 6px 0;
+		margin: 0 0 6px 0;
+		cursor: default;
+	}
+
+	input[type=radio], input[type=checkbox] {
+		margin:0 11px 0 0;
+	}
+
+
+}

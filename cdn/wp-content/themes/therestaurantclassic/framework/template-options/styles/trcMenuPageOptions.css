@@ -1,0 +1,114 @@
+@import 'reveal.css';
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains the styles necessary for
+	the Menu Builder to function
+*/
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains mixins which are used
+	in other less files inside this directory.
+*/
+.menuPage ul,
+#MenuManagerItems ul {
+  margin: 0px;
+  min-height: 100px;
+}
+.menuPage ul .placeholder,
+#MenuManagerItems ul .placeholder {
+  background: #f1f1f1;
+}
+.menuPage ul li,
+#MenuManagerItems ul li {
+  background: #fff;
+  padding: 11px;
+  position: relative;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0px 1px 2px 0px #dddddd;
+  -khtml-box-shadow: 0px 1px 2px 0px #dddddd;
+  -moz-box-shadow: 0px 1px 2px 0px #dddddd;
+  -ms-box-shadow: 0px 1px 2px 0px #dddddd;
+  -o-box-shadow: 0px 1px 2px 0px #dddddd;
+  box-shadow: 0px 1px 2px 0px #dddddd;
+  cursor: pointer;
+}
+.menuPage ul li:hover .itemName,
+#MenuManagerItems ul li:hover .itemName {
+  background: #9e3103;
+  color: #fff;
+}
+.menuPage ul li .removeItem,
+#MenuManagerItems ul li .removeItem {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+.menuPage ul li .itemName,
+#MenuManagerItems ul li .itemName {
+  font-family: georgia;
+  text-align: center;
+  background: #fafafa;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 0 11px 0;
+}
+.menuPage ul li .items,
+#MenuManagerItems ul li .items {
+  text-align: center;
+  font-size: 11px;
+  display: block;
+  color: #888;
+}
+#MenuManagerItems ul.left {
+  width: 48%;
+  float: left;
+}
+#MenuManagerItems ul.right {
+  width: 48%;
+  float: right;
+}
+#MenuManagerItems .removeItem {
+  display: none;
+}
+.menuPage {
+  zoom: 1;
+  margin: 22px 0 22px 0;
+}
+.menuPage .removePage {
+  font-size: 11px;
+  text-decoration: none;
+  color: #9e3103;
+}
+.menuPage h1 {
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 11px 0;
+  padding: 0 0 11px 0;
+}
+.menuPage:first-child {
+  margin: none;
+}
+.menuPage .addItem {
+  background: #f1f1f1;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding: 5px 11px;
+}
+.menuPage .addItem:hover {
+  background: #9e3103;
+  color: #fff;
+}
+.menuPage .menuLeft {
+  width: 45%;
+  float: left;
+}
+.menuPage .menuRight {
+  width: 45%;
+  float: right;
+}

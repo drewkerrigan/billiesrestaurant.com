@@ -1,0 +1,113 @@
+@import 'reveal.css';
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains the styles necessary for
+	the Menu Builder to function
+*/
+/***********************************************/
+/*               About This File               */
+/***********************************************/
+/*
+	This file contains mixins which are used
+	in other less files inside this directory.
+*/
+.mashupPage ul,
+#MashupManagerItems ul {
+  margin: 0px;
+  min-height: 100px;
+}
+.mashupPage ul .placeholder,
+#MashupManagerItems ul .placeholder {
+  background: #f1f1f1;
+}
+.mashupPage ul li,
+#MashupManagerItems ul li {
+  background: #fff;
+  padding: 11px;
+  position: relative;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0px 1px 2px 0px #dddddd;
+  -khtml-box-shadow: 0px 1px 2px 0px #dddddd;
+  -moz-box-shadow: 0px 1px 2px 0px #dddddd;
+  -ms-box-shadow: 0px 1px 2px 0px #dddddd;
+  -o-box-shadow: 0px 1px 2px 0px #dddddd;
+  box-shadow: 0px 1px 2px 0px #dddddd;
+  cursor: pointer;
+}
+.mashupPage ul li:hover .itemName,
+#MashupManagerItems ul li:hover .itemName {
+  background: #9e3103;
+  color: #fff;
+}
+.mashupPage ul li .removeItem,
+#MashupManagerItems ul li .removeItem {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+.mashupPage ul li .itemName,
+#MashupManagerItems ul li .itemName {
+  font-family: georgia;
+  text-align: center;
+  background: #fafafa;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 0 11px 0;
+}
+.mashupPage ul li .items,
+#MashupManagerItems ul li .items {
+  text-align: center;
+  font-size: 11px;
+  display: block;
+  color: #888;
+}
+#MashupManagerItems ul.left {
+  width: 48%;
+  float: left;
+}
+#MashupManagerItems ul.right {
+  width: 48%;
+  float: right;
+}
+#MashupManagerItems .removeItem {
+  display: none;
+}
+.mashupPage {
+  zoom: 1;
+  margin: 22px 0 22px 0;
+}
+.mashupPage h1 {
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 11px 0;
+  padding: 0 0 11px 0;
+}
+.mashupPage:first-child {
+  margin: none;
+}
+.mashupPage .checkboxes {
+  font-size: 11px;
+  color: #999999;
+}
+.mashupPage .addItem {
+  background: #f1f1f1;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding: 5px 11px;
+}
+.mashupPage .addItem:hover {
+  background: #9e3103;
+  color: #fff;
+}
+.mashupPage .menuLeft {
+  width: 45%;
+  float: left;
+}
+.mashupPage .menuRight {
+  width: 45%;
+  float: right;
+}
